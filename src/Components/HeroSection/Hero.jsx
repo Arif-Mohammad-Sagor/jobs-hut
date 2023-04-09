@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   return (
       <div>
-          empty hero
+         hero section will be displayed here 
     </div>
   )
 }
