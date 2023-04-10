@@ -10,8 +10,6 @@ const FeaturedJobs = ({ pd }) => {
       companyName,
       educationalRequirement,
       experience,
-      jobDescription,
-      jobResponsibilites,
       jobTitle,
       jobType,
       location,
