@@ -8,14 +8,11 @@ const FeaturedJobs = ({ pd }) => {
       id,
       companyLogo,
       companyName,
-      educationalRequirement,
-      experience,
       jobTitle,
       jobType,
       location,
       fullTimeOrPartTime,
       salaryRange,
-      contactInformation,
     } = pd;
   return (
     <div className="p-4 shadow-md">
