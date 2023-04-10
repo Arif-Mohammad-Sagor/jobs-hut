@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaMapMarkerAlt, FaCreativeCommonsNc } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 
 const FeaturedJobs = ({ pd }) => {
 
@@ -19,7 +20,7 @@ const FeaturedJobs = ({ pd }) => {
       contactInformation,
     } = pd;
   return (
-    <div className="p-4 shadow-lg">
+    <div className="p-4 shadow-md">
       <img className="w-[120px] h-[40px]" src={companyLogo} />
       <p className="text-lg">{jobTitle}</p>
       <p className="text-md">{companyName}</p>
@@ -41,7 +42,9 @@ const FeaturedJobs = ({ pd }) => {
           Salary :{salaryRange}
         </p>
       </div>
-      <button className="btn-primary">View Detail</button>
+      <NavLink to={`/${id}`}>
+        <button className="btn-primary">View Detail</button>
+      </NavLink>
     </div>
   );
 }
