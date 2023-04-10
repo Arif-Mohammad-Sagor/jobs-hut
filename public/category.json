@@ -1,0 +1,23 @@
+[
+  {
+    "category": "Software Development",
+    "availableJobs": 50,
+    "logo": "/Icons/chip 1.png"
+  },
+  {
+    "category": "Marketing",
+    "availableJobs": 25,
+    "logo": "Icons/business 1.png"
+  },
+  {
+    "category": "Data Science",
+    "availableJobs": 20,
+    "logo": "Icons/accounts 1.png"
+  },
+  {
+    "category": "Customer Support",
+    "availableJobs": 15,
+    "logo": "Icons/social-media 1.png"
+  }
+
+]
