@@ -5,14 +5,17 @@
     "companyName": "Google",
     "jobTitle": "Software Engineer",
     "salaryRange": "$100,000 - $150,000",
-    "fullTime": true,
-    "partTime": false,
+    "fullTimeOrPartTime": "Full-time",
     "location": "Mountain View, CA",
     "jobDescription": "We are looking for a talented software engineer to join our team and help build the next generation of products at Google.",
     "jobResponsibilities": "Design, develop, and test software, collaborate with cross-functional teams, and maintain high coding standards",
     "educationalRequirement": "Bachelor’s degree in Computer Science or related field",
     "experience": "3+ years of professional software development experience",
-    "jobType": "onsite"
+    "jobType": "onsite",
+    "contactInformation": {
+      "phone": "555-1234",
+      "email": "jobs@example.com"
+    }
   },
   {
     "id": 1,
@@ -20,44 +23,53 @@
     "companyName": "Microsoft",
     "jobTitle": "Data Analyst",
     "salaryRange": "$80,000 - $120,000",
-    "fullTime": false,
-    "partTime": true,
+    "fullTimeOrPartTime": "Full-time",
     "location": "Redmond, WA",
     "jobDescription": "We are seeking a data analyst to join our team and help us drive insights from our data.",
     "jobResponsibilities": "Collect, analyze, and interpret complex data, communicate findings to stakeholders, and collaborate with cross-functional teams",
     "educationalRequirement": "Bachelor’s degree in a quantitative field",
     "experience": "2+ years of experience in data analysis or related field",
-    "jobType": "remote"
+    "jobType": "remote",
+    "contactInformation": {
+      "phone": "555-5678",
+      "email": "jobs@example.com"
+    }
   },
   {
     "id": 2,
-    "companyLogo": "https://www.tesla.com/sites/default/files/images/tesla_logo_social.jpg",
+    "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Tesla_Motors.svg/1200px-Tesla_Motors.svg.png",
     "companyName": "Tesla",
     "jobTitle": "Electrical Engineer",
     "salaryRange": "$90,000 - $120,000",
-    "fullTime": true,
-    "partTime": false,
+    "fullTimeOrPartTime": "Full-time",
     "location": "Fremont, CA",
     "jobDescription": "We are seeking a highly motivated electrical engineer to join our team and help develop cutting-edge automotive technology.",
     "jobResponsibilities": "Design and develop electrical systems for electric vehicles, collaborate with cross-functional teams, and ensure product quality and reliability",
     "educationalRequirement": "Bachelor's degree in Electrical Engineering or related field",
     "experience": "2+ years of experience in electrical engineering or related field",
-    "jobType": "onsite"
+    "jobType": "onsite",
+    "contactInformation": {
+      "phone": "555-9012",
+      "email": "jobs@example.com"
+    }
   },
   {
     "id": 3,
-    "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
+    "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
     "companyName": "Amazon",
     "jobTitle": "Senior Product Manager",
     "salaryRange": "$150,000 - $200,000",
-    "fullTime": true,
-    "partTime": false,
+    "fullTimeOrPartTime": "Full-time",
     "location": "Seattle, WA",
     "jobDescription": "We are looking for an experienced product manager to lead the development of new products at Amazon.",
     "jobResponsibilities": "Lead cross-functional teams to define product requirements, develop and execute product strategies, and manage product lifecycle",
     "educationalRequirement": "Bachelor's degree in Business Administration, Engineering, or related field",
     "experience": "7+ years of experience in product management",
-    "jobType": "onsite"
+    "jobType": "onsite",
+    "contactInformation": {
+      "phone": "5553456",
+      "email": "info@example.com"
+    }
   },
   {
     "id": 4,
@@ -65,28 +77,34 @@
     "companyName": "Facebook",
     "jobTitle": "Software Engineer, Machine Learning",
     "salaryRange": "$130,000 - $170,000",
-    "fullTime": true,
-    "partTime": false,
+    "fullTimeOrPartTime": "Full-time",
     "location": "Menlo Park, CA",
     "jobDescription": "We are looking for a software engineer to work on cutting-edge machine learning projects at Facebook.",
     "jobResponsibilities": "Develop and deploy machine learning models, collaborate with research teams, and optimize model performance",
     "educationalRequirement": "Master's degree in Computer Science or related field",
     "experience": "3+ years of experience in machine learning and software engineering",
-    "jobType": "onsite"
+    "jobType": "onsite",
+    "contactInformation": {
+      "phone": "5559012",
+      "email": "support@example.com"
+    }
   },
   {
     "id": 5,
-    "companyLogo": "https://www.netlify.com/img/press/logos/logomark.png",
+    "companyLogo": "https://avatars.githubusercontent.com/u/7892489?s=280&v=4",
     "companyName": "Netlify",
     "jobTitle": "Product Designer",
     "salaryRange": "$90,000 - $120,000",
-    "fullTime": true,
-    "partTime": false,
+    "fullTimeOrPartTime": "Full-time",
     "location": "San Francisco, CA",
     "jobDescription": "We are looking for a talented product designer to join our team and help us build the future of the web.",
     "jobResponsibilities": "Design and prototype new product features, collaborate with cross-functional teams, and conduct user research",
     "educationalRequirement": "Bachelor's degree in Design, HCI, or related field",
     "experience": "3+ years of experience in product design",
-    "jobType": "remote"
+    "jobType": "remote",
+    "contactInformation": {
+      "phone": "5551234",
+      "email": "contact@example.com"
+    }
   }
 ]
