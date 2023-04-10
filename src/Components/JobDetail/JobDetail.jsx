@@ -6,8 +6,9 @@ import {
   FaPhoneAlt,
   FaMailBulk,
   FaMapMarkerAlt,
-
 } from "react-icons/fa";
+import { addToDb } from "../../Utilities/FakeDb";
+
 
 const JobDetail = () => {
   const [details, setDetails] = useState({});
@@ -22,7 +23,9 @@ const JobDetail = () => {
     }
   }, []);
 
-  console.log(details);
+  const handleAddtoCart = (id) => {
+    addToDb(id);
+  };
 
   return (
     <div className="container flex flex-col md:flex-row gap-4 mt-20">
@@ -41,7 +44,7 @@ const JobDetail = () => {
           Job Details
         </p>
         <div className="divider-y-8 mt-4 pl-4">
-        <hr className="h-1 mt-4  bg-gray-400 mb-4" />
+          <hr className="h-1 mt-4  bg-gray-400 mb-4" />
           <p className="flex items-center">
             <span className="text-blue-500 mr-1">
               <FaCreativeCommonsNc />
@@ -82,9 +85,14 @@ const JobDetail = () => {
             <span className="">Dhanmondi 32,Dhaka,BD</span>
           </p>
         </div>
-        <NavLink to="/">
-          <button className="w-full btn-primary"> Apply Now </button>
-        </NavLink>
+
+        <button
+          onClick={() => handleAddtoCart(jobId)}
+          className="w-full btn-primary"
+        >
+          {" "}
+          Apply Now{" "}
+        </button>
       </div>
     </div>
   );
