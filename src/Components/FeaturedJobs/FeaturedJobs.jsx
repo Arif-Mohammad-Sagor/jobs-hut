@@ -37,7 +37,7 @@ const FeaturedJobs = ({ pd }) => {
           Salary :{salaryRange}
         </p>
       </div>
-      <NavLink to={`/${id}`}>
+      <NavLink to={`/job/${id}`}>
         <button className="btn-primary">View Detail</button>
       </NavLink>
     </div>
