@@ -1,16 +1,15 @@
-import React, { Children } from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
+import React, { Children } from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 
-import Root from './Components/Root/Root'
+import Root from "./Components/Root/Root";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ErrorPage from './Components/ErrorPage/ErrorPage'
-import Home from './Components/Home/Home';
-import Statistics from './Components/Statistics/Statistics';
-import Blog from './Components/Blog/Blog';
-import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
-import JobDetail from './Components/JobDetail/JobDetail';
-
+import ErrorPage from "./Components/ErrorPage/ErrorPage";
+import Home from "./Components/Home/Home";
+import Statistics from "./Components/Statistics/Statistics";
+import Blog from "./Components/Blog/Blog";
+import AppliedJobs from "./Components/AppliedJobs/AppliedJobs";
+import JobDetail from "./Components/JobDetail/JobDetail";
 
 const router = createBrowserRouter([
   {
@@ -21,12 +20,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("category.json"),
+        loader: () => fetch("/category.json"),
       },
       {
         path: "/job/:jobId",
         element: <JobDetail />,
-        loader: () => fetch("products.json"),
+        loader: () => fetch("/products.json"),
       },
 
       {
@@ -40,7 +39,7 @@ const router = createBrowserRouter([
       {
         path: "/appliedjobs",
         element: <AppliedJobs />,
-        loader: () => fetch("products.json"),
+        loader: () => fetch("/products.json"),
       },
     ],
   },

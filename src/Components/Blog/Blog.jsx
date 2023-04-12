@@ -33,7 +33,7 @@ const Blog = () => {
       <div className="my-4 p-4 shadow-md bg-pink-200">
         <p className="font-semibold my-4">When should you use context API ?</p>
         <p>
-          In React, a custom hook is a JavaScript function that uses one or more
+        a custom hook is a JavaScript function that uses one or more
           of the built-in React hooks (such as useState, useEffect, useContext,
           etc.) to encapsulate reusable stateful logic that can be shared across
           multiple components.
@@ -55,15 +55,12 @@ const Blog = () => {
       <div className="my-4 p-4 shadow-md bg-pink-200">
         <p className="font-semibold my-4">What is useRef?</p>
         <p>
-          In React, useRef is a tool that allows you to create a reference to a
+           useRef is a tool that allows you to create a reference to a
           specific element or value that persists across component renders. It's
           like giving a name to something that you can use to refer to it later.
           <br />
           <br />
-          Sure, let me explain useRef in simpler terms. In React, useRef is a
-          tool that allows you to create a reference to a specific element or
-          value that persists across component renders. It's like giving a name
-          to something that you can use to refer to it later. One common use
+          One common use
           case for useRef is to access and manipulate DOM elements. For example,
           you could use useRef to create a reference to an input field, and then
           use that reference to set the focus on that field when a button is
@@ -83,9 +80,9 @@ const Blog = () => {
         </p>
       </div>
       <div className="my-4 p-4 shadow-md bg-pink-200">
-        <p className="font-semibold my-4">What is useRef?</p>
+        <p className="font-semibold my-4">What is useMemo?</p>
         <p>
-          n React, useMemo is a tool that helps you speed up your app by
+          useMemo is a tool that helps you speed up your app by
           remembering the result of a function so you don't have to calculate it
           again. It works by caching the result of the function and only
           recalculating it if the inputs to the function change.
