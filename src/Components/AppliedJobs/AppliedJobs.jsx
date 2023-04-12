@@ -4,44 +4,42 @@ import { getShoppingCart } from "../../Utilities/FakeDb";
 import { FaCreativeCommonsNc, FaMapMarkerAlt } from "react-icons/fa";
 
 const AppliedJobs = () => {
-  const [storedJob, setStoredJob] = useState([]);
 
-  const [cartJob, setCartjob] = useState([]);
-  const [isloading, setIsloading] = useState(true);
+  const [allJobs, setAllJobs] = useState([]);
+  const [tempAllJobs, setTempAllJobs] = useState([]);
 
-  // fetching here products data
+  // fetching here all jobs
   const loadedData = useLoaderData();
 
-  // fetching here localStorage data .
   useEffect(() => {
-
+    // fetching here localStorage data .
     const storedJobs = getShoppingCart();
-    setStoredJob(storedJobs);
 
     let cartJobs = [];
 
-    for (const id in storedJob) {
+    for (const id in storedJobs) {
       const addedJobs = loadedData.find((job) => job.id == id);
       cartJobs.push(addedJobs);
     }
 
-    // console.log(cartJobs);
-    setCartjob([...cartJobs]);
-      console.log(cartJob)
-  }, [isloading]);
+setAllJobs([...cartJobs]);
+setTempAllJobs([...cartJobs]);
+  }, []);
 
   const handleChange = (e) => {
 
-    const sortedData = cartJob.filter((job) => job.jobType === e.target.value);
+    const sortedData = allJobs.filter((job) => job.jobType === e.target.value);
+    setTempAllJobs(sortedData);
 
-    console.log(sortedData);
-    
-    setCartjob(sortedData);
-    setIsloading(!isloading);
   };
 
   return (
     <div>
+      <div className=" relative  bg-slate-100 h-[200px] flex justify-between items-center">
+        <img className=" -mt-0 -ml-32" src={"/All Images/Vector.png"} />
+        <p className="text-xl font-bold -mt-16">Applied Jobs</p>
+        <img className=" -mt-40 -mr-24 " src={"/All Images/Vector-1.png"} />
+      </div>
       <div className=" container flex justify-end">
         <select
           onChange={handleChange}
@@ -55,7 +53,7 @@ const AppliedJobs = () => {
       </div>
 
       <div className="container grid grid-cols-1 mt-12">
-        {cartJob?.map((jobs) => (
+        {tempAllJobs?.map((jobs) => (
           <div className="flex items-center mb-4">
             <div className="bg-gray-200 p-4 h-full flex items-center justify-center">
               <img className="w-[120px] h-[40px]" src={jobs.companyLogo} />

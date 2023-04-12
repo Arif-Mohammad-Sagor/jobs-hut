@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container{
-    @apply w-10/12 mx-auto
+    @apply w-8/12 mx-auto
 }
 
 .btn-primary{

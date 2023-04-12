@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import {
   FaCreativeCommonsNc,
   FaCalendarAlt,
@@ -13,13 +13,16 @@ import { addToDb } from "../../Utilities/FakeDb";
 const JobDetail = () => {
   const [details, setDetails] = useState({});
 
+
   const loadedData = useLoaderData();
   const { jobId } = useParams();
+
 
   useEffect(() => {
     if (loadedData) {
       const selectedProduct = loadedData.find((pd) => pd.id == jobId);
       setDetails(selectedProduct);
+      
     }
   }, []);
 

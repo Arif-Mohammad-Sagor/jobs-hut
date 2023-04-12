@@ -42,7 +42,7 @@ const marks = [
   ];
 
   return (
-    <div className="bg-pink-100 container my-16 p-6">
+    <div className="bg-pink-100 w-5/6 mx-auto my-16 p-6">
 
       <AreaChart
         width={1100}

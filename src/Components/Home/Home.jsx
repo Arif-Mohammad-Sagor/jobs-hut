@@ -1,20 +1,30 @@
 import React, { useEffect, useState } from "react";
 import Hero from "../HeroSection/Hero";
 import JobsCategory from "../JobsCategory/JobsCategory";
-import { useLoaderData } from "react-router-dom";
 import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
+// import { useLoaderData } from "react-router-dom";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
   const [listed, setListed] = useState(false);
+  const [categoryJobs, setCategoryJobs] = useState([]);
 
-  const categoryData = useLoaderData();
+  // const categoryData = useLoaderData();
 
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch("products.json");
       const data = await res.json();
       setProducts(data);
+    };
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await fetch("category.json");
+      const data = await res.json();
+      setCategoryJobs(data);
     };
     fetchData();
   }, []);
@@ -34,7 +44,7 @@ const Home = () => {
         </p>
       </>
       <div className="container grid lg:grid-cols-4 gap-4 mt-8">
-        {categoryData.map((jobs, index) => (
+        {categoryJobs.map((jobs, index) => (
           <JobsCategory jobs={jobs} key={index} />
         ))}
       </div>
