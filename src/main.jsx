@@ -10,7 +10,7 @@ import Statistics from './Components/Statistics/Statistics';
 import Blog from './Components/Blog/Blog';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import JobDetail from './Components/JobDetail/JobDetail';
-// import Job from './Components/JobDetail/Job/Job';
+
 
 const router = createBrowserRouter([
   {
@@ -30,12 +30,12 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/statistics",
-        element: <Statistics />,
-      },
-      {
         path: "/blog",
         element: <Blog />,
+      },
+      {
+        path: "/statistics",
+        element: <Statistics />,
       },
       {
         path: "/appliedjobs",

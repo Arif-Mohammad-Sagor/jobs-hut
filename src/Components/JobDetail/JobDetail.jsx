@@ -11,18 +11,18 @@ import { addToDb } from "../../Utilities/FakeDb";
 
 
 const JobDetail = () => {
+  // const [loadedData,setLoadedData]=useState([])
   const [details, setDetails] = useState({});
 
 
-  const loadedData = useLoaderData();
   const { jobId } = useParams();
 
-
+  const loadedData = useLoaderData();
   useEffect(() => {
     if (loadedData) {
       const selectedProduct = loadedData.find((pd) => pd.id == jobId);
       setDetails(selectedProduct);
-      
+
     }
   }, []);
 
@@ -34,13 +34,13 @@ const JobDetail = () => {
     <div className="container flex flex-col md:flex-row gap-4 mt-20">
       <div className="md:w-3/5">
         <p className="text-lg font-semibold">Job Description</p>
-        <p>{details.jobDescription}</p>
+        <p>{details?.jobDescription}</p>
         <p className="text-lg font-semibold mt-4">Job Responsibility</p>
-        <p>{details.jobResponsibilities}</p>
+        <p>{details?.jobResponsibilities}</p>
         <p className="text-lg font-semibold mt-4">Educational Requirement</p>
-        <p>{details.educationalRequirement}</p>
+        <p>{details?.educationalRequirement}</p>
         <p className="text-lg font-semibold mt-4">Experience</p>
-        <p>{details.experience}</p>
+        <p>{details?.experience}</p>
       </div>
       <div className="bg-purple-200 p-4 md:w-2/5 ">
         <p className="font-semibold text-xl text-center text-gray-500">
@@ -53,14 +53,14 @@ const JobDetail = () => {
               <FaCreativeCommonsNc />
             </span>
             <span className="font-semibold mr-1">Salary:</span>
-            {details.salaryRange}
+            {details?.salaryRange}
           </p>
           <p className="flex items-center mt-2">
             <span className="text-blue-500 mr-1">
               <FaCalendarAlt />
             </span>
             <span className="font-semibold mr-1">JobTitle:</span>
-            {details.jobTitle}
+            {details?.jobTitle}
           </p>
           <p className="font-semibold mt-4 text-lg ">Contact Information</p>
           <hr className="h-1 mt-4 bg-gray-400" />
@@ -71,14 +71,14 @@ const JobDetail = () => {
               <FaPhoneAlt />
             </span>
             <span className="font-semibold mr-1">Phone:</span>
-            {details.contactInformation?.phone}
+            {details?.contactInformation?.phone}
           </p>
           <p className="flex items-center mt-2">
             <span className="text-blue-500 mr-1">
               <FaMailBulk />
             </span>
             <span className="font-semibold mr-1">Mail:</span>
-            {details.contactInformation?.email}
+            {details?.contactInformation?.email}
           </p>
           <p className="flex items-center mt-2">
             <span className="text-blue-500 mr-1">
@@ -93,8 +93,7 @@ const JobDetail = () => {
           onClick={() => handleAddtoCart(jobId)}
           className="w-full btn-primary"
         >
-          {" "}
-          Apply Now{" "}
+          Apply Now
         </button>
       </div>
     </div>

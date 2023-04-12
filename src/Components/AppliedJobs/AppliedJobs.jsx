@@ -16,9 +16,9 @@ const AppliedJobs = () => {
     const storedJobs = getShoppingCart();
 
     let cartJobs = [];
-
+    console.log(loadedData);
     for (const id in storedJobs) {
-      const addedJobs = loadedData.find((job) => job.id == id);
+      const addedJobs = loadedData?.find((job) => job.id == id);
       cartJobs.push(addedJobs);
     }
 
@@ -36,9 +36,12 @@ setTempAllJobs([...cartJobs]);
   return (
     <div>
       <div className=" relative  bg-slate-100 h-[200px] flex justify-between items-center">
-        <img className=" -mt-0 -ml-32" src={"/All Images/Vector.png"} />
-        <p className="text-xl font-bold -mt-16">Applied Jobs</p>
-        <img className=" -mt-40 -mr-24 " src={"/All Images/Vector-1.png"} />
+        <img className=" w-44 mt-12 -ml-8" src={"/All Images/Vector.png"} />
+        <p className=" text-xl font-bold -mt-16">Applied Jobs</p>
+        <img
+          className=" w-44 -mt-48  overflow-hidden "
+          src={"/All Images/Vector-1.png"}
+        />
       </div>
       <div className=" container flex justify-end">
         <select
