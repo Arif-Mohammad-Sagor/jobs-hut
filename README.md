@@ -1,4 +1,3 @@
-# b7a9-career-hub-MdTalha707
-[GitHub] (https://helpful-youtiao-391466.netlify.app/ "Github Home")
+[Live Website Link] (https://helpful-youtiao-391466.netlify.app/)
 # This is a short summary about my project
 1
