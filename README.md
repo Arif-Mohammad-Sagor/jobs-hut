@@ -1,5 +1,6 @@
-1# Project Name: Chakri Zone
-Live Website Link: [Chakri Zone] (https://helpful-youtiao-391466.netlify.app/)
+# Project Name: Chakri Paow
+
+# Live Website Link: [Chakri Zone] (https://helpful-youtiao-391466.netlify.app/)
 
 ## Basic Project Structure Setup Details
 
